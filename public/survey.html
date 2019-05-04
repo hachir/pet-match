@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Survey</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div class="panel-title">
+					<div class="col-sm-12 col-md-6">
+						<h1>Survey Questions</h1>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<p>
+							<a href="../data/friends.js">API Friends Link</a>|
+							<a href="https://github.com/aprilmariewilson/Friend-Finder">GitHub Repo</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="panel-body">
+				<form class="form-group" role="form">
+					<div class="form-group">
+						<label class="sr-only" for="exampleInputName2">Name</label>
+						<input type="name" class="form-control" id="name" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="exampleInputPicture">Link to Photo</label>
+						<input type="pictureLink" class="form-control" id="photo" placeholder="Photo Link">
+					</div>
+				</form>
+				<form class="form-group" role="form">
+					<!-- Q1 -->
+					<div id="q0" class="chosen-select">
+						<h3>How large is your family</h3>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question0" id="optionsRadios1" value="1"> We have young children
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question0" id="optionsRadios2" value="2"> Just me
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question0" id="optionsRadios3" value="3"> A couple lives here
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question0" id="optionsRadios4" value="4"> We have young and older children
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question0" id="optionsRadios5" value="5"> We have older children that can help out
+							</label>
+						</div>
+					</div>
+				</form>
+				<!-- q2 -->
+				<form class="form-group" role="form">
+					<div id="q1" class="chosen-select">
+						<h3>How much time does your family spend at home</h3>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question1" id="optionsRadios1" value="1"> Just enough time to sleep.
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question1" id="optionsRadios2" value="2"> A couple hours a few times a week
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question1" id="optionsRadios3" value="3"> My schedule varies but we have some time.
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question1" id="optionsRadios4" value="4"> We have a schedule that allows plenty of home time
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question1" id="optionsRadios5" value="5"> Someone is always home to hang.
+							</label>
+						</div>
+					</div>
+				</form>
+				<!-- q3 -->
+				<form class="form-group" role="form">
+					<div id="q2" class="chosen-select">
+						<h3>How much room do you have for a pet?</h3>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question2" id="optionsRadios1" value="1"> Cramped inside and out
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question2" id="optionsRadios2" value="2"> Extra space inside with no outside space
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question2" id="optionsRadios3" value="3"> cramped inside, some fenced space outside.
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question2" id="optionsRadios4" value="4"> Some space inside with a large fenced yard
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question2" id="optionsRadios5" value="5"> Sprawling space both inside and out.
+							</label>
+						</div>
+					</div>
+				</form>
+				<!-- q4 -->
+				<form class="form-group" role="form">
+					<div id="q3" class="chosen-select">
+						<h3>What would your level of activity with your new pet would be.</h3>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question3" id="optionsRadios1" value="1"> No time for activities
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question3" id="optionsRadios2" value="2"> Couch potato- will clean a couple times a week
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question3" id="optionsRadios3" value="3"> I have time for some activities
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question3" id="optionsRadios4" value="4"> We are willing to take time for training and activities
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question3" id="optionsRadios5" value="5"> Lots of time to keep pet engaged and occupied
+							</label>
+						</div>
+					</div>
+				</form>
+				<!-- q5 -->
+				<form class="form-group" role="form">
+					<div id="q4" class="chosen-select">
+						<h3>Which do you prefer?</h3>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question4" id="optionsRadios1" value="1"> Scales
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question4" id="optionsRadios2" value="2"> Feathers
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question4" id="optionsRadios3" value="3"> Small and Furry
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question4" id="optionsRadios4" value="4"> Big and Fuzzy
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question4" id="optionsRadios5" value="5"> Smooth
+							</label>
+						</div>
+					</div>
+				</form>
+				<!-- q6 -->
+				<form class="form-group" role="form">
+					<div id="q5" class="chosen-select">
+						<h3>Do you have pet allergies</h3>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question5" id="optionsRadios1" value="1"> Yes
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question5" id="optionsRadios2" value="2"> No
+							</label>
+						</div>
+					</div>
+				</form>
+				<!-- q7 -->
+				<form class="form-group" role="form">
+					<div id="q6" class="chosen-select">
+						<h3>How much are you planning to budget to the care of your new pet?</h3>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question6" id="optionsRadios1" value="1"> Under $25
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question6" id="optionsRadios2" value="2"> $25-$50
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question6" id="optionsRadios3" value="3"> $50-$100
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question6" id="optionsRadios4" value="4"> $100-$200
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question6" id="optionsRadios5" value="5"> $200+
+							</label>
+						</div>
+					</div>
+				</form>
+				<!-- q8 -->
+				<form class="form-group" role="form">
+					<div id="q7" class="chosen-select">
+						<h3>How much affection do you want your pet to display?</h3>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question7" id="optionsRadios1" value="1"> I want a pet that is completely oblivious to me.
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question7" id="optionsRadios2" value="2"> I want an independant pet who does acknoledge my existance."
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question7" id="optionsRadios3" value="3">I want interaction but not necessarily cuddling.
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question7" id="optionsRadios4" value="4"> I want some cuddle time.
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question7" id="optionsRadios5" value="5"> I want total adoration and constant affection.
+							</label>
+						</div>
+					</div>
+				</form>
+				<!-- q9 -->
+				<form class="form-group" role="form">
+					<div id="q8" class="chosen-select">
+						<h3>Do you have a need for a guard animal?</h3>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question8" id="optionsRadios1" value="1">I want to scare unwanted visitors away.
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question8" id="optionsRadios2" value="2">I want to be alerted when something is approaching.
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question8" id="optionsRadios3" value="3">I don't care what people think of my pet.
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question8" id="optionsRadios4" value="4"> I don't want anyone to be scared
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question8" id="optionsRadios5" value="5"> I don't want anyone to notice there are pets here
+							</label>
+						</div>
+					</div>
+				</form>
+				<!-- q10 -->
+				<form class="form-group" role="form">
+					<div id="q9" class="chosen-select">
+						<h3>What size of pet are you looking for?</h3>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question9" id="optionsRadios1" value="1"> Tiny - fits in palm of hand
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question9" id="optionsRadios2" value="2"> Small (5lbs-15lbs)
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question9" id="optionsRadios3" value="3"> Medium (20lbs-50lbs)
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question9" id="optionsRadios4" value="4"> Large (50lbs-150lbs)
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question9" id="optionsRadios5" value="5"> Extra Large (min. 150 lbs.)
+							</label>
+						</div>
+					</div>
+				</form>
+				<!-- q11 -->
+				<form class="form-group" role="form">
+					<div id="q10" class="chosen-select">
+						<h3>What is your budget for initial cost?</h3>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question10" id="optionsRadios1" value="1"> Under $50
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question10" id="optionsRadios2" value="2"> $50-$100
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question10" id="optionsRadios3" value="3"> $100-$250
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question10" id="optionsRadios4" value="4"> $250-$500
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="question10" id="optionsRadios5" value="5"> $500+
+							</label>
+						</div>
+					</div>
+					<!-- submit button -->
+					<div class="col-md-12">
+						<button type="submit" id="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- put modal here -->
+	<div class="modal fade" id= "myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Your New Friend</h4>
+				</div>
+				<div class="modal-body">
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			$("#submit").on("click", function (event) {
+				event.preventDefault();
+				//get values of choices
+				value = $("input[type='radio']:checked").val();
+				//create new user
+				var newUser = {
+					"name": $("#name").val().trim(),
+					"photo": $("#photo").val().trim(),
+					"scores": [
+						$('input[name = question0]:checked').val(),
+						$('input[name = question1]:checked').val(),
+						$('input[name = question2]:checked').val(),
+						$('input[name = question3]:checked').val(),
+						$('input[name = question4]:checked').val(),
+						$('input[name = question5]:checked').val(),
+						$('input[name = question6]:checked').val(),
+						$('input[name = question7]:checked').val(),
+						$('input[name = question8]:checked').val(),
+						$('input[name = question9]:checked').val()
+					]
+				};
+				// get
+				$.post("/api/friends", newUser)
+					.then(function (results) {
+						console.log(results);
+						var Modal = new ModalBuild(results);
+					});
+				// end of the function for clicking on submit button
+			});
+		});
+		// constructor function that will create content for the modal
+		function ModalBuild(item) {
+			// make the matchName info an H3 tag and concatenate w/ meaningful text
+			var matchName = $('<h3>').text("YOUR BEST MATCH IS: " + item.name);
+			// pull the image src from the item, put it into an image tag with an alt text
+			var matchImage = $('<img>')
+				.attr("src", item.photo)
+				.attr("alt", item.name)
+				.attr("width", "25%");
+			// make a MatchText item that is concatenating the score difference with some meaningful text
+			var matchText = $('<p>')
+				.text("The difference in your answer scores was only  " + item.score + " points!  You would be a great match!");
+			var takeAgain = $('<a>')
+				.attr("href", "/survey")
+				.html(
+					$('<button>')
+						.text("Take the survey again")
+				);
+			// make a div and append it with the image content and 
+			$('.modal-body').append(matchName, matchImage, matchText, takeAgain)
+			$("#myModal").modal();
+		}
+	</script>
+
+
+</body>
+
+</html>
