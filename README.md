@@ -12,7 +12,7 @@ Express.js
 Node.js
 JSON
 Authors
-April Wilson
+Hayder Achir
 
 Acknowledgements
 I would like to thank anyone who's code was used either as inspiration or in snipets. Anyone who asked a question on community websites such as Stackoverflow that helped me think through problems either on this project or any before and after.
